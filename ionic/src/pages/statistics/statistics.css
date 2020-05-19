@@ -1,0 +1,111 @@
+#page-statistics .scroll-content {
+  margin-top: 0px;
+  overflow: hidden;
+}
+
+
+/* shapes styles */
+
+#page-statistics .content-container-vivid-light .shape-one {
+  width: 69vw;
+  height: 40vh;
+  opacity: 0.9;
+  background-image: linear-gradient(#F6DC79, #FF9E7B);
+  border-radius: 50%;
+  position: absolute;
+  top: -25%;
+  left: -11%;
+  z-index: 1;
+}
+
+#page-statistics .content-container-vivid-light .shape-two {
+  width: 100vw;
+  height: 100vw;
+  background-image: linear-gradient(#F679A3, #E9446A);
+  border-radius: 50%;
+  position: absolute;
+  top: -28%;
+  left: 37%;
+}
+
+page-statistics .toolbar-background {
+  background: transparent;
+}
+
+page-statistics .scroll-content {
+  margin-top: 0 !important;
+}
+
+page-statistics ion-title {
+  text-align: center;
+}
+
+page-statistics .toolbar-title {
+  color: #ffffff;
+}
+
+
+/* web ui */
+
+.platform-core #page-statistics .scroll-content {
+  padding: 0;
+}
+
+.platform-core #page-statistics .shapes-container-vivid {
+  width: 50%;
+}
+
+.platform-core #page-statistics .shapes-container-vivid .shape-one {
+  width: 30vw;
+  height: 50vh;
+  top: -25%;
+  left: -10%;
+  transform: rotate(45deg);
+  background-image: linear-gradient(#F6DC79, #FF9E7B);
+  border-radius: 0;
+  position: absolute;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  z-index: 2;
+  opacity: 1;
+}
+
+.platform-core #page-statistics .shapes-container-vivid .shape-two {
+  width: 60vw;
+  height: 80vh;
+  top: -50%;
+  left: -36%;
+  transform: rotate(35deg);
+  background-image: linear-gradient(#F679A3, #E9446A);
+  border-radius: 0;
+  position: absolute;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.platform-core page-statistics .toolbar-title {
+  color: #424242;
+}
+
+.main-content{
+  margin-top: 14em;
+  text-align: left;
+}
+
+.stats-container{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  padding-left:10%;
+  padding-right:10%;
+  margin-top:2em;
+}
+
+.card{
+  width: 36%;
+  height: 36%;
+  border-radius: 4px;
+  text-align: center;
+  margin: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;;
+}

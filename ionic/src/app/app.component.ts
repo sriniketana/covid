@@ -8,6 +8,7 @@ import { LoginPage } from '../pages/login/login';
 import { LandingPage } from "../pages/landing/landing";
 import { StatisticsPage } from "../pages/statistics/statistics";
 import{LiveUpdateProvider} from "../providers/live-update/live-update";
+import { ChatbotPage } from "../pages/chatbot/chatbot";
 
 @Component({
     templateUrl: 'app.html'

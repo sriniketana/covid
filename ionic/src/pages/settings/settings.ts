@@ -30,4 +30,9 @@ export class SettingsPage {
       }
     );
   }
+
+    ionViewDidLoad() {
+        WL.Analytics.log({ fromPage: this.navCtrl.getPrevious(this.navCtrl.getActive()).name, toPage: this.navCtrl.getActive().name }, 'PageTransition ');
+        WL.Analytics.send();
+    }
 }

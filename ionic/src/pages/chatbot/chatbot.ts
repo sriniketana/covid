@@ -54,6 +54,8 @@ export class ChatbotPage {
       scrollContentSelector
     ) as HTMLElement;
     scrollElement.style.overflow = 'hidden';
+      WL.Analytics.log({ fromPage: this.navCtrl.getPrevious(this.navCtrl.getActive()).name, toPage: this.navCtrl.getActive().name }, 'PageTransition ');
+      WL.Analytics.send();
   }
 
   // provide the url, iam api key and workspace id

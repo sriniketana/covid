@@ -57,9 +57,9 @@ export class StatisticsPage {
           self.active = active;
         });
 
-        alert(
-          'Success: ' + active + '-' + confirmed + '-' + recovered + '-' + fatal
-        );
+        // alert(
+        //   'Success: ' + active + '-' + confirmed + '-' + recovered + '-' + fatal
+        // );
 
         //alert(JSON.stringify(response['India']));
       },
@@ -68,4 +68,9 @@ export class StatisticsPage {
       }
     );
   }
+
+    ionViewDidLoad() {
+        WL.Analytics.log({ fromPage: this.navCtrl.getPrevious(this.navCtrl.getActive()).name, toPage: this.navCtrl.getActive().name }, 'PageTransition ');
+        WL.Analytics.send();
+    }
 }

@@ -41,10 +41,7 @@
         <splash density="port-xhdpi" src="resources/android/splash/drawable-port-xhdpi-screen.png" />
         <splash density="port-xxhdpi" src="resources/android/splash/drawable-port-xxhdpi-screen.png" />
         <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
-        <resource-file src="resources/android/xml/network_security_config.xml" target="app/src/main/res/xml/network_security_config.xml" />
-        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application" xmlns:android="http://schemas.android.com/apk/res/android">
-            <application android:networkSecurityConfig="@xml/network_security_config" />
-        </edit-config>
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application" xmlns:android="http://schemas.android.com/apk/res/android" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
@@ -126,7 +123,7 @@
     </mfp:windows>
     <mfp:platformVersion>8.0.0.00-20190910-141455</mfp:platformVersion>
     <mfp:clientCustomInit enabled="false" />
-    <mfp:server runtime="mfp" url="http://127.0.0.1:9080" />
+    <mfp:server runtime="mfp" url="https://mobilefoundation.icpademo-c33bf0f22ab59313b3628c493e016b88-0000.us-south.containers.appdomain.cloud:443" />
     <mfp:serverUri url="" />
     <mfp:directUpdateAuthenticityPublicKey />
     <mfp:languagePreferences>en</mfp:languagePreferences>

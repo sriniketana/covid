@@ -5,6 +5,7 @@ import { SettingsPage } from '../settings/settings';
 import { HomePage } from '../home/home';
 import { LandingPage } from '../landing/landing';
 import { StatisticsPage } from '../statistics/statistics';
+import {ChatbotPage} from '../chatbot/chatbot';
 
 @Component({
   templateUrl: 'tabs.html'
@@ -12,7 +13,7 @@ import { StatisticsPage } from '../statistics/statistics';
 export class TabsPage {
   tab1Root = LandingPage;
   tab2Root = StatisticsPage;
-  tab3Root = SettingsPage;
+  tab3Root = ChatbotPage;
 
   constructor(public navCtrl: NavController, public renderer: Renderer) {}
 }

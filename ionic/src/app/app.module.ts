@@ -13,9 +13,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { LandingPage } from "../pages/landing/landing";
 import { StatisticsPage } from "../pages/statistics/statistics";
 import { LiveUpdateProvider } from '../providers/live-update/live-update';
+import { ChatbotPage } from "../pages/chatbot/chatbot";
 
 @NgModule({
-  declarations: [MyApp, AboutPage, SettingsPage, HomePage, LoginPage, TabsPage,LandingPage,StatisticsPage],
+  declarations: [MyApp, AboutPage, SettingsPage, HomePage, LoginPage, TabsPage,LandingPage,StatisticsPage,ChatbotPage],
   imports: [BrowserModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -25,7 +26,7 @@ import { LiveUpdateProvider } from '../providers/live-update/live-update';
     HomePage,
     LoginPage,
     TabsPage,
-    LandingPage,StatisticsPage
+    LandingPage,StatisticsPage,ChatbotPage
   ],
   providers: [
     StatusBar,

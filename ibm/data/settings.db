@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"type":"chatbot-credentials","value":{"chatbot":{"name":"chatbot","url":"https://gateway-syd.watsonplatform.net/assistant/api","apiKey":"T7lXyuaIGlZHoNDPy7LIqqk3DDodkiBdsbgCEMYfwZPz","type":"WATSON_CHAT_BOT","models":{}}},"_id":"P4kUbkfvVzbLO5sp"}
+=======
+{"type":"chatbot-credentials","value":{"chatbot":{"name":"chatbot","url":"https://gateway-syd.watsonplatform.net/assistant/api","apiKey":"T7lXyuaIGlZHoNDPy7LIqqk3DDodkiBdsbgCEMYfwZPz","type":"WATSON_CHAT_BOT","models":{}}},"_id":"JOE7A656h3CnnbLj"}
+>>>>>>> 301e0605dadcce35f0ca53a56bc90a0a91eb9720

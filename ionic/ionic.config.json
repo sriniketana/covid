@@ -1,7 +1,1 @@
-{
-  "name": "NewTestMe",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
-}
+{"name":"NewTestMe","integrations":{"cordova":{}},"type":"ionic-angular","proxies":[{"path":"/mfp","proxyUrl":"http://mobilefoundation.rahultestocp-c33bf0f22ab59313b3628c493e016b88-0000.us-south.containers.appdomain.cloud:80/mfp"}]}

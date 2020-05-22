@@ -1,4 +1,7 @@
-<link href="https://fonts.googleapis.com/css?family=Lato:400,600&display=swap" rel="stylesheet" />
+<link
+  href="https://fonts.googleapis.com/css?family=Lato:400,600&display=swap"
+  rel="stylesheet"
+/>
 
 <ion-content padding text-center id="page-statistics">
   <div class="content-container-vivid-light">
@@ -8,28 +11,37 @@
     </div>
   </div>
   <div class="main-content">
-    <h1 style="font-family: Lato; font-weight: 600; font-size: 6rem;">Statistics</h1>
+    <h1 style="font-family: Lato; font-weight: 600; font-size: 6rem;">
+      Statistics
+    </h1>
     <h3 style="font-family: Lato; margin-top: 2em;">India</h3>
-    
-    
+
     <div class="stats-container">
       <div class="card">
-        <h4 style="font-family: Lato; background-color: yellow;">Confirmed</h4>
-        <h4 style="font-family: Lato;">1234</h4>
+        <h4 style="font-family: Lato; background-color: yellow;">
+          confirmed
+        </h4>
+        <h4 style="font-family: Lato;">{{confirmed}}</h4>
       </div>
       <div class="card">
-        <h4 style="font-family: Lato;  background-color: green;">Recovered</h4>
-        <h4 style="font-family: Lato;">1234</h4>
+        <h4 style="font-family: Lato;  background-color: green;">
+          Recovered
+        </h4>
+        <h4 style="font-family: Lato;">{{recovered}}</h4>
       </div>
       <div class="card">
         <h4 style="font-family: Lato; background-color: orange;">Active</h4>
-        <h4 style="font-family: Lato;">1234</h4>
+        <h4 style="font-family: Lato;">{{active}}</h4>
       </div>
       <div class="card">
         <h4 style="font-family: Lato;  background-color: red;">Fatal</h4>
-        <h4 style="font-family: Lato;">0</h4>
+        <h4 style="font-family: Lato;">{{fatal}}</h4>
       </div>
     </div>
   </div>
-  <button style="font-family: Lato; padding:1em; color:white; background-color: red;">Alert</button>
+  <button
+    style="font-family: Lato; padding:1em; color:white; background-color: red;"
+  >
+    Alert
+  </button>
 </ion-content>

@@ -16,8 +16,4 @@ export class HomePage {
   ) {
     
   }
-
-  ionViewDidLoad() {}
-
-  
 }

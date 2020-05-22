@@ -19,9 +19,4 @@ export class LandingPage {
   constructor(public navCtrl: NavController, public dataStore:DataStore, public liveUpdateService:LiveUpdateProvider) {
 
   }
-
-    ionViewDidLoad() {
-        WL.Analytics.log({ fromPage: this.navCtrl.getPrevious(this.navCtrl.getActive()).name, toPage: this.navCtrl.getActive().name }, 'PageTransition ');
-        WL.Analytics.send();
-    }
 }

@@ -16,8 +16,4 @@ export class TabsPage {
   tab3Root = ChatbotPage;
 
   constructor(public navCtrl: NavController, public renderer: Renderer) {}
-
-  ionViewDidLoad() {
-      WL.Analytics.log({ fromPage: this.navCtrl.getPrevious(this.navCtrl.getActive()).name, toPage: this.navCtrl.getActive().name }, 'PageTransition ');
-      WL.Analytics.send();}
 }

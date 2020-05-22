@@ -12,12 +12,4 @@ export class AboutPage {
     public renderer: Renderer,
     public dataStore: DataStore
   ) {}
-
-  ionViewDidLoad() {
-      WL.Analytics.log({ fromPage: this.navCtrl.getPrevious(this.navCtrl.getActive()).name, toPage: this.navCtrl.getActive().name }, 'PageTransition ');
-      WL.Analytics.send();
-     
-    //WL.Analytics.log({ fromPage: this.navCtrl.getPrevious(this.navCtrl.getActive()).name, toPage: this.navCtrl.getActive().name }, 'PageTransition ');
-    //WL.Analytics.send();
-  }
 }

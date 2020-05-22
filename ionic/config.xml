@@ -97,7 +97,7 @@
         </mfp:security>
     </mfp:android>
     <mfp:ios>
-        <mfp:sdkChecksum>336151202</mfp:sdkChecksum>
+        <mfp:sdkChecksum>2727706581</mfp:sdkChecksum>
         <mfp:appChecksum>0</mfp:appChecksum>
         <mfp:security>
             <mfp:testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3" />
@@ -124,7 +124,7 @@
         </mfp:windows10>
         <mfp:appChecksum>0</mfp:appChecksum>
     </mfp:windows>
-    <mfp:platformVersion>8.0.0.00-20190910-141455</mfp:platformVersion>
+    <mfp:platformVersion>8.0.0.00-20200322-152731</mfp:platformVersion>
     <mfp:clientCustomInit enabled="false" />
     <mfp:server runtime="mfp" url="https://mobilefoundation.icpademo-c33bf0f22ab59313b3628c493e016b88-0000.us-south.containers.appdomain.cloud:443" />
     <mfp:serverUri url="" />

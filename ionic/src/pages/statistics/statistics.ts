@@ -67,10 +67,38 @@ export class StatisticsPage {
         alert('Failure: ' + JSON.stringify(response));
       }
     );
+
+    LiveUpdateManager.obtainConfiguration(
+      {
+        useClientCache: true
+      },
+      function(configuration) {
+        // Control a feature using live update
+
+        var myFeature = configuration.features['alert'];
+        if (myFeature !== undefined) {
+          (<HTMLElement>(
+            document.querySelector('[studio-id="alert_btn"]')
+          )).style.visibility = myFeature == true ? 'visible' : 'hidden';
+        }
+      },
+      function(error) {
+        console.log(
+          'ObtainConfiguration failed with error: ' + JSON.stringify(error)
+        );
+      }
+    );
   }
 
-    ionViewDidLoad() {
-        WL.Analytics.log({ fromPage: this.navCtrl.getPrevious(this.navCtrl.getActive()).name, toPage: this.navCtrl.getActive().name }, 'PageTransition ');
-        WL.Analytics.send();
-    }
+  ionViewDidLoad() {
+    WL.Analytics.log(
+      {
+        fromPage: this.navCtrl.getPrevious(this.navCtrl.getActive()).name,
+        toPage: this.navCtrl.getActive().name
+      },
+      'PageTransition '
+    );
+    WL.Analytics.send();
+      WL.Analytics.log({ fromPage: this.navCtrl.getPrevious(this.navCtrl.getActive()).name, toPage: this.navCtrl.getActive().name }, 'PageTransition ');
+  }
 }

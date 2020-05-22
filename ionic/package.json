@@ -37,7 +37,7 @@
     "cordova-plugin-globalization": "^1.11.0",
     "cordova-plugin-ionic-keyboard": "2.1.3",
     "cordova-plugin-ionic-webview": "2.3.1",
-    "cordova-plugin-mfp": "^8.0.2020032412",
+    "cordova-plugin-mfp": "8.0.2020032412",
     "cordova-plugin-mfp-analytics": "8.0.2020032412",
     "cordova-plugin-mfp-liveupdate": "8.0.202003051505",
     "cordova-plugin-okhttp": "^2.0.0",
@@ -71,11 +71,11 @@
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic-keyboard": {},
       "cordova-plugin-mfp-analytics": {},
-      "cordova-plugin-advanced-http": {}
+      "cordova-plugin-advanced-http": {},
+      "cordova-plugin-mfp-liveupdate": {}
     },
     "platforms": [
-      "ios",
-      "android"
+      "ios"
     ]
   }
 }

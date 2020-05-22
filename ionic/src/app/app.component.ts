@@ -1,4 +1,4 @@
-import { Component, ViewChild, Renderer, ChangeDetectorRef,NgModule } from '@angular/core';
+import { Component, ViewChild, Renderer, ChangeDetectorRef, NgModule } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -7,7 +7,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
 import { LandingPage } from "../pages/landing/landing";
 import { StatisticsPage } from "../pages/statistics/statistics";
-import{LiveUpdateProvider} from "../providers/live-update/live-update";
+import { LiveUpdateProvider } from "../providers/live-update/live-update";
 import { ChatbotPage } from "../pages/chatbot/chatbot";
 
 @Component({
@@ -17,7 +17,7 @@ import { ChatbotPage } from "../pages/chatbot/chatbot";
     providers: [
         LiveUpdateProvider
     ]
-  })
+})
 export class MyApp {
     rootPage: any;
 
@@ -33,7 +33,10 @@ export class MyApp {
             this.initializeApp(renderer, cdr);
             WL.Analytics.enable();
         });
-        
+        renderer.listenGlobal('document', 'mfpjsloaded', () => {
+            this.initializeLiveUpdate();
+        });
+
     }
     initializeApp(renderer, cdr) {
         this.platform.ready().then(() => {
@@ -46,5 +49,36 @@ export class MyApp {
         });
     }
 
-    
+    initializeLiveUpdate() {
+
+        LiveUpdateManager.obtainConfiguration(
+            {
+                useClientCache: false
+            },
+            function(configuration) {
+                // Control a property using live update 
+                /*
+                var myProperty = configuration.properties["property_id"];
+                if(myProperty !== undefined) {
+                  (<HTMLElement>(document.querySelector('[studio-id="faq_Label_2835"]'))).innerText = 
+                  myProperty;
+                }
+                */
+
+                // Control a feature using live update 
+                /*
+                 var myFeature = configuration.features["feature_id"];
+                 if(myFeature !== undefined) {
+                   (<HTMLElement>(document.querySelector('[studio-id="faq_Label_2835"]')))
+                   .style.visibility = myFeature == true
+                   ? "visible" : "hidden";
+                 }
+                 */
+            },
+            function(error) {
+                console.log('ObtainConfiguration failed with error: ' + error.errorMsg);
+            }
+        )
+
+    }
 }

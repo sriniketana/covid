@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <network-security-config>
   <domain-config cleartextTrafficPermitted="true">
-    <domain includeSubdomains="true">localhost</domain>
+    <domain includeSubdomains="true">mobilefoundation.rahultestocp-c33bf0f22ab59313b3628c493e016b88-0000.us-south.containers.appdomain.cloud</domain>
   </domain-config>
 </network-security-config>

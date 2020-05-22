@@ -1,7 +1,1 @@
-{
-  "name": "NewTestMe",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
-}
+{"name":"NewTestMe","integrations":{"cordova":{}},"type":"ionic-angular","proxies":[{"path":"/mfp","proxyUrl":"http://192.168.1.2:9080/mfp"}]}
